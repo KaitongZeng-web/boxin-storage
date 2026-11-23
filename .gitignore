@@ -1,0 +1,10 @@
+node_modules/
+.expo/
+dist/
+dist-native/
+.env
+server/.env
+__pycache__/
+.venv/
+*.db
+/public/sticker/

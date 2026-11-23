@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>贴纸工坊 · Boxin收纳盒</title>
+<link rel="stylesheet" href="studio.css">
+<main>
+  <header><b><i>Boxin</i>收纳盒</b><span>物品实验室</span></header>
+  <section class="intro"><div><h1>贴纸工坊</h1><p>从照片中取出一件物品，做成自己的收纳贴纸。</p></div>
+    <button id="choose">＋ 选择照片</button><input hidden id="file" type="file" accept="image/jpeg,image/png,image/webp">
+  </section>
+  <div class="panels">
+    <section><h2>原始照片</h2><div class="frame source" id="drop"><img id="source" alt="用于抠图的原始照片"></div>
+      <p>拖入照片，或点图中已检测到的物品切换主体。</p></section>
+    <section><h2>透明贴纸</h2><div class="frame checker"><img id="output" hidden alt="抠图后的贴纸"><span id="empty">等待照片</span></div>
+      <p id="status" role="status">正在载入咖啡示例…</p></section>
+  </div>
+  <section class="tools"><div class="tile"><img hidden id="mini" alt="物品格预览"></div><div class="fields"><label for="name">物品名称</label><input id="name" maxlength="120" value="咖啡杯"></div>
+    <button id="identify" class="secondary" disabled>识别名称</button><button id="save" disabled>导出 PNG ↓</button></section>
+</main>
+<script src="studio.js" defer></script>
+</html>

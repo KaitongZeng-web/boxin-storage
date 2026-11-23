@@ -1,0 +1,3 @@
+import { MAX_BACKUP_BYTES } from './backup';
+export async function exportFile(content:string){const uri=URL.createObjectURL(new Blob([content],{type:'application/json'}));const a=document.createElement('a');a.href=uri;a.download='Boxin收纳盒-备份.json';a.click();setTimeout(()=>URL.revokeObjectURL(uri),1000)}
+export async function importFile():Promise<string|undefined>{return new Promise((resolve,reject)=>{const input=document.createElement('input');input.type='file';input.accept='.json,application/json';input.oncancel=()=>resolve(undefined);input.onchange=async()=>{try{const file=input.files?.[0];if(!file)return resolve(undefined);if(file.size>MAX_BACKUP_BYTES)throw new Error('备份文件不能超过 40MB');resolve(await file.text())}catch(e){reject(e)}};input.click()})}

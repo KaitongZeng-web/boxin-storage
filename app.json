@@ -1,0 +1,1 @@
+{"expo":{"name":"Boxin收纳盒","slug":"boxie","version":"1.0.0","orientation":"portrait","userInterfaceStyle":"dark","ios":{"supportsTablet":true,"bundleIdentifier":"com.boxie.app"},"android":{"package":"com.boxie.app"},"web":{"bundler":"metro"},"plugins":[["expo-image-picker",{"photosPermission":"选择物品照片以添加到收纳箱","cameraPermission":"拍摄物品照片以识别收纳物品"}],"expo-sqlite"]}}
