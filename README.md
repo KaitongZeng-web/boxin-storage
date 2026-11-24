@@ -4,6 +4,8 @@
 
 本地优先的个人收纳记忆 MVP。Expo / React Native / TypeScript 移动端，附浏览器演示与FastAPI 本地抠图服务。
 
+![Boxin收纳盒的首页、搜索和我的页面，从左到右排列](docs/images/app-preview.png)
+
 ## 启动
 
 需要 Node.js 22.6+、npm；服务端需要 Python 3.11+。
